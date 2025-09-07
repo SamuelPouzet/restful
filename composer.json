@@ -1,0 +1,15 @@
+{
+    "name": "samuelpouzet/restfull",
+    "autoload": {
+        "psr-4": {
+            "Samuelpouzet\\Restfull\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Samuel POUZET",
+            "email": "samuel.pouzet@yahoo.fr"
+        }
+    ],
+    "require": {}
+}
