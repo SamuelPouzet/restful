@@ -1,10 +1,10 @@
 <?php
-namespace Samuelpouzet\Restfull;
+namespace Samuelpouzet\Restful;
 
-use Samuelpouzet\Restfull\Listener\Factory\RouteListenerFactory;
-use Samuelpouzet\Restfull\Listener\RouteListener;
-use Samuelpouzet\Restfull\Strategy\Factory\ExceptionStrategyFactory;
-use Samuelpouzet\Restfull\Strategy\Factory\RouteNotFoundStrategyFactory;
+use Samuelpouzet\Restful\Listener\Factory\RouteListenerFactory;
+use Samuelpouzet\Restful\Listener\RouteListener;
+use Samuelpouzet\Restful\Strategy\Factory\ExceptionStrategyFactory;
+use Samuelpouzet\Restful\Strategy\Factory\RouteNotFoundStrategyFactory;
 
 return [
     'service_manager' => [

@@ -1,6 +1,6 @@
 <?php
 
-namespace Samuelpouzet\Restfull\Strategy;
+namespace Samuelpouzet\Restful\Strategy;
 
 use Laminas\Http\Response as HttpResponse;
 use Laminas\Mvc\Application;

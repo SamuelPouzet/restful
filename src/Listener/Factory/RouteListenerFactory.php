@@ -1,10 +1,10 @@
 <?php
 
-namespace Samuelpouzet\Restfull\Listener\Factory;
+namespace Samuelpouzet\Restful\Listener\Factory;
 
 use Laminas\ServiceManager\Factory\FactoryInterface;
 use Psr\Container\ContainerInterface;
-use Samuelpouzet\Restfull\Listener\RouteListener;
+use Samuelpouzet\Restful\Listener\RouteListener;
 
 class RouteListenerFactory implements FactoryInterface
 {

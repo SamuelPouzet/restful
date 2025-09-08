@@ -1,17 +1,22 @@
 <?php
 
-namespace Samuelpouzet\Restfull\Controller;
+namespace Samuelpouzet\Restful\Controller;
 
 use Laminas\Http\Response;
 use Laminas\Mvc\Controller\AbstractActionController;
 use Laminas\View\Model\JsonModel;
 
-abstract class AbstractRestfullController extends AbstractActionController
+abstract class AbstractRestfulController extends AbstractActionController
 {
     final protected function getRequestData(): array
     {
         $input = json_decode(file_get_contents("php://input"), true);
         return array_merge($this->params()->fromPost(), $input);
+    }
+
+    final protected function getRouteData(string $datumName): string
+    {
+        return $this->params()->fromRoute($datumName);
     }
 
     final protected function restFullError(int $code, string $message): JsonModel

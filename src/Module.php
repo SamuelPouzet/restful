@@ -1,6 +1,6 @@
 <?php
 
-namespace Samuelpouzet\Restfull;
+namespace Samuelpouzet\Restful;
 
 class Module
 {

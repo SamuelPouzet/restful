@@ -1,10 +1,10 @@
 <?php
 
-namespace Samuelpouzet\Restfull\Strategy\Factory;
+namespace Samuelpouzet\Restful\Strategy\Factory;
 
 use Laminas\ServiceManager\Factory\FactoryInterface;
 use Psr\Container\ContainerInterface;
-use Samuelpouzet\Restfull\Strategy\ExceptionStrategy;
+use Samuelpouzet\Restful\Strategy\ExceptionStrategy;
 
 class ExceptionStrategyFactory implements FactoryInterface
 {

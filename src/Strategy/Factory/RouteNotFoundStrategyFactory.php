@@ -1,10 +1,10 @@
 <?php
 
-namespace Samuelpouzet\Restfull\Strategy\Factory;
+namespace Samuelpouzet\Restful\Strategy\Factory;
 
 use Laminas\ServiceManager\Factory\FactoryInterface;
 use Psr\Container\ContainerInterface;
-use Samuelpouzet\Restfull\Strategy\RouteNotFoundStrategy;
+use Samuelpouzet\Restful\Strategy\RouteNotFoundStrategy;
 
 class RouteNotFoundStrategyFactory implements FactoryInterface
 {

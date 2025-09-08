@@ -1,6 +1,6 @@
 <?php
 
-namespace Samuelpouzet\Restfull\Listener;
+namespace Samuelpouzet\Restful\Listener;
 
 use Laminas\Mvc\Application;
 use Laminas\Mvc\MvcEvent;
@@ -28,7 +28,7 @@ class RouteListener extends parentListener
 
         if ($routeMatch instanceof RouteMatch) {
             //on récupère la méthode;
-            $this->getAction($routeMatch, $event);
+            $this->getAction($routeMatch);
             $event->setRouteMatch($routeMatch);
             return $routeMatch;
         }
@@ -45,11 +45,11 @@ class RouteListener extends parentListener
         return $event->getParams();
     }
 
-    protected function getAction(RouteMatch $routeMatch, MvcEvent $event): void
+    protected function getAction(RouteMatch $routeMatch): void
     {
         $method = $this->getMethod();
         if ($method === 'get') {
-            $identifierName = $event->getParam('identifierName') ?? 'id';
+            $identifierName = $routeMatch->getParam('identifierName') ?? 'id';
             if ( null === $routeMatch->getParam($identifierName)) {
                 $method = 'getall';
             }
