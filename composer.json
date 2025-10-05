@@ -9,6 +9,9 @@
         "php": ">=8.1",
         "ext-json": "*"
     },
+    "config": {
+        "sort-packages": true
+    },
     "autoload": {
         "psr-4": {
             "Samuelpouzet\\Restful\\": "src/"
@@ -22,7 +25,7 @@
     ],
     "extra": {
         "laminas": {
-            "component": "Samuelpouzet\\RestFul"
+            "component": "Samuelpouzet\\Restful"
         }
     }
 }
