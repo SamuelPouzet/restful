@@ -22,7 +22,7 @@
     ],
     "extra": {
         "laminas": {
-            "component": "SamuelPouzet\\RestFul"
+            "component": "Samuelpouzet\\RestFul"
         }
     }
 }
